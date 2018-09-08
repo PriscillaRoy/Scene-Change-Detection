@@ -1,0 +1,42 @@
+import pandas as pd
+from sklearn import preprocessing
+
+#data = {'score': [234,24,14,27,-74,46,73,-18,59,160]}
+#dataf = [234,24,14,27,-74,46,73,-18,59,160]
+#df = pd.DataFrame(data)
+#print(df)
+
+#min_max_scaler = preprocessing.normalize(dataf)
+#np_scaled = min_max_scaler.fit_transform(dataf)
+#print(min_max_scaler)
+#df_normalized = pd.DataFrame(np_scaled)
+#print(df_normalized)
+
+
+
+# Standardize the data attributes for the Iris dataset.
+from sklearn.datasets import load_iris
+from sklearn import preprocessing
+# load the Iris dataset
+#iris = load_iris()
+#print(iris.data.shape)
+# separate the data and target attributes
+import numpy as np
+X = []
+X.append(234)
+X.append(24)
+X.append(14)
+y = np.asarray(X)
+print(y)
+#y.reshape(1,-1)
+print(X)
+#print(X.shape)
+#X = [234,24,14,27,-74,46,73,-18,59,160]
+# standardize the data attributes
+standardized_X = np.linalg.norm(y,ord=np.inf, axis=0, keepdims=True)
+#standardized_X = preprocessing.normalize(y)
+print(standardized_X)
+#Norm [ 1.          0.1025641   0.05982906]
+
+y = (y - y.min())/(y.max()- y.min())
+print("Norm",y)
