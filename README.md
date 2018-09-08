@@ -1,7 +1,5 @@
 # Computer Vision
-Homework #2
-
-Due: Tu 02/27/18 11:59 PM
+Scene Change Detection
 See Homework - 2 description file (Homework-2.pdf) for details.
 
 Create data points:
